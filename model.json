@@ -1,0 +1,826 @@
+{
+  "entities": [
+    {
+      "name": "Hrac",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_hrac",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "jmeno",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "prijmeni",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_narozeni",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": "date"
+        },
+        {
+          "name": "narodnost",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "pozice",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 1425.2222222222222,
+        "y": 51.32986111111114,
+        "width": 183.08888965182837,
+        "height": 145.21875
+      }
+    },
+    {
+      "name": "Klub",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_klub",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "nazev",
+          "primary": false,
+          "unique": true,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 1239,
+        "y": 439.21875,
+        "width": 135.97194975493585,
+        "height": 116.57344055175781
+      }
+    },
+    {
+      "name": "Klub_trofej",
+      "parent": null,
+      "attr": [
+        {
+          "name": "pocet",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": "integer"
+        }
+      ],
+      "transform": {
+        "x": 1479,
+        "y": 373.59217834472656,
+        "width": 169.6375503540039,
+        "height": 74.40000915527344
+      }
+    },
+    {
+      "name": "Kontrakt",
+      "parent": null,
+      "attr": [
+        {
+          "name": "zacatek_kontraktu",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": "date"
+        },
+        {
+          "name": "konec_kontraktu",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": "date"
+        }
+      ],
+      "transform": {
+        "x": 1212.9719497549358,
+        "y": 232.54861111111114,
+        "width": 189.015625,
+        "height": 120
+      }
+    },
+    {
+      "name": "Liga",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_liga",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "nazev",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "zeme",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 983.1111111111111,
+        "y": 335.77430555555543,
+        "width": 150.55555555555566,
+        "height": 112.24010721842455
+      }
+    },
+    {
+      "name": "Stadion",
+      "parent": null,
+      "attr": [
+        {
+          "name": "nazev",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "kapacita",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": "integer"
+        }
+      ],
+      "transform": {
+        "x": 1016.3111109203762,
+        "y": 553.7520802815754,
+        "width": 162.80000019073486,
+        "height": 119.57430860731324
+      }
+    },
+    {
+      "name": "Trener",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_trener",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "jmeno",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "prijmeni",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "datum_narozeni",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": "date"
+        },
+        {
+          "name": "narodnost",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": "varchar(256)"
+        }
+      ],
+      "transform": {
+        "x": 983.9719497549358,
+        "y": 49.79219055175781,
+        "width": 209.02805024506415,
+        "height": 143.75642055935333
+      }
+    },
+    {
+      "name": "Trofej",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_trofej",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "nazev",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        }
+      ],
+      "transform": {
+        "x": 1701.1999998092651,
+        "y": 242.8000030517578,
+        "width": 166,
+        "height": 106
+      }
+    },
+    {
+      "name": "Zapas",
+      "parent": null,
+      "attr": [
+        {
+          "name": "id_zapas",
+          "primary": true,
+          "unique": false,
+          "nullable": false,
+          "type": null
+        },
+        {
+          "name": "id_domaci_klub",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": "integer"
+        },
+        {
+          "name": "id_hostujici_klub",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": "integer"
+        },
+        {
+          "name": "datum_zapasu",
+          "primary": false,
+          "unique": false,
+          "nullable": false,
+          "type": "date"
+        }
+      ],
+      "transform": {
+        "x": 1471,
+        "y": 557.21875,
+        "width": 193,
+        "height": 119.57344055175781
+      }
+    },
+    {
+      "name": "Zapas_hrac",
+      "parent": null,
+      "attr": [
+        {
+          "name": "gol",
+          "primary": false,
+          "unique": false,
+          "nullable": true,
+          "type": "integer"
+        },
+        {
+          "name": "asistence",
+          "primary": false,
+          "unique": false,
+          "nullable": true,
+          "type": "integer"
+        },
+        {
+          "name": "zluta_karta",
+          "primary": false,
+          "unique": false,
+          "nullable": true,
+          "type": "integer"
+        },
+        {
+          "name": "cervena_karta",
+          "primary": false,
+          "unique": false,
+          "nullable": true,
+          "type": "integer"
+        }
+      ],
+      "transform": {
+        "x": 1744.3111118740505,
+        "y": 582.9921875,
+        "width": 153.51260375976562,
+        "height": 84.59995174407959
+      }
+    }
+  ],
+  "relations": [
+    [
+      {
+        "entity": "Klub_trofej",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1569.3111118740505,
+            "y": 447.9921875,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 1569.3111118740505,
+              "y": 497.5054702758789
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Klub",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1374.9719497549358,
+            "y": 497.5054702758789,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 1569.3111118740505,
+              "y": 497.5054702758789
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Kontrakt",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1307.9719497549358,
+            "y": 352.54861111111114,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 1307.9719497549358,
+              "y": 374.54861111111114
+            },
+            {
+              "x": 1307.9670669424358,
+              "y": 401.38368055555554
+            }
+          ],
+          "manual": true
+        }
+      },
+      {
+        "entity": "Klub",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1307.9621841299358,
+            "y": 439.21875,
+            "edge": 0
+          },
+          "points": [
+            {
+              "x": 1307.9670669424358,
+              "y": 401.38368055555554
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Kontrakt",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 0,
+        "xor": "3bf3f141c2f5c99c3bf3f141c6f43cc4",
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1401.9875747549358,
+            "y": 292.54861111111114,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 1470.7993429330236,
+              "y": 250.04861111111114
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Hrac",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1522.611111111111,
+            "y": 196.54861111111114,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 1470.7993429330236,
+              "y": 250.04861111111114
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Liga",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1051.171946703178,
+            "y": 448.01441277398,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 1051.171946703178,
+              "y": 495.1921920776367
+            }
+          ],
+          "manual": true
+        }
+      },
+      {
+        "entity": "Klub",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1239,
+            "y": 495.1921920776367,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 1051.171946703178,
+              "y": 495.1921920776367
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Stadion",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1179.111111111111,
+            "y": 621.8854132758247,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 1282.164134203178,
+              "y": 621.8854132758247
+            },
+            {
+              "x": 1282.164134203178,
+              "y": 621.8854132758247
+            }
+          ],
+          "manual": true
+        }
+      },
+      {
+        "entity": "Klub",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1282.171946703178,
+            "y": 555.7921905517578,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 1282.164134203178,
+              "y": 621.8854132758247
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Trener",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1088.485974877468,
+            "y": 193.54861111111114,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 1142.228962316202,
+              "y": 248.54861111111114
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Kontrakt",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 0,
+        "xor": "3bf3f141c2f5c99c3bf3f141c6f43cc4",
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1212.9719497549358,
+            "y": 292.54861111111114,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 1142.228962316202,
+              "y": 248.54861111111114
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Trofej",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1701.1999998092651,
+            "y": 298.8000030517578,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 1569.3111118740505,
+              "y": 298.8000030517578
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Klub_trofej",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1569.3111118740505,
+            "y": 373.59217834472656,
+            "edge": 0
+          },
+          "points": [
+            {
+              "x": 1569.3111118740505,
+              "y": 298.8000030517578
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Zapas_hrac",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1744.3111118740505,
+            "y": 621.577334612608,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 1704.1555559370254,
+              "y": 621.5847564786673
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Zapas",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1664,
+            "y": 621.5921783447266,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 1704.1555559370254,
+              "y": 621.5847564786673
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Zapas_hrac",
+        "identifying": true,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1897.8237156338162,
+            "y": 622.5921783447266,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 1994.3111118740505,
+              "y": 622.5921783447266
+            },
+            {
+              "x": 1994.3111118740505,
+              "y": 117.59217834472656
+            }
+          ],
+          "manual": true
+        }
+      },
+      {
+        "entity": "Hrac",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1608.3111118740505,
+            "y": 117.59217834472656,
+            "edge": 1
+          },
+          "points": [
+            {
+              "x": 1994.3111118740505,
+              "y": 117.59217834472656
+            }
+          ],
+          "manual": false
+        }
+      }
+    ],
+    [
+      {
+        "entity": "Zapas",
+        "identifying": false,
+        "optional": false,
+        "cardinality": 0,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1471,
+            "y": 617.0054702758789,
+            "edge": 3
+          },
+          "points": [
+            {
+              "x": 1341.3111118740505,
+              "y": 617.0054702758789
+            }
+          ],
+          "manual": false
+        }
+      },
+      {
+        "entity": "Klub",
+        "identifying": false,
+        "optional": true,
+        "cardinality": 1,
+        "xor": null,
+        "name": null,
+        "transform": {
+          "anchor": {
+            "x": 1341.3111118740505,
+            "y": 555.7921905517578,
+            "edge": 2
+          },
+          "points": [
+            {
+              "x": 1341.3111118740505,
+              "y": 617.0054702758789
+            }
+          ],
+          "manual": false
+        }
+      }
+    ]
+  ],
+  "notes": [
+    {
+      "text": "IO1:\nKlub nemůže být domácím klubem a zároveň hostujícím klubem ve stejném zápase.\n\nIO2:\nHráč i trenér může mít více kontraktů za svojí kariéru ale nemůže mít dva kontrakty,\nkteré platí ve stejné době.",
+      "transform": {
+        "x": 1631.3111118740505,
+        "y": 140.9921875,
+        "width": 330.07501220703125,
+        "height": 64
+      }
+    }
+  ]
+}

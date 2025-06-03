@@ -1,0 +1,10 @@
+INSERT INTO public.zapas (id_zapas, id_domaci_klub, id_hostujici_klub, datum_zapasu) VALUES (1, 6, 1, '2024-09-17');
+INSERT INTO public.zapas (id_zapas, id_domaci_klub, id_hostujici_klub, datum_zapasu) VALUES (2, 2, 1, '2024-10-27');
+INSERT INTO public.zapas (id_zapas, id_domaci_klub, id_hostujici_klub, datum_zapasu) VALUES (3, 1, 3, '2024-11-27');
+INSERT INTO public.zapas (id_zapas, id_domaci_klub, id_hostujici_klub, datum_zapasu) VALUES (4, 5, 2, '2024-11-06');
+INSERT INTO public.zapas (id_zapas, id_domaci_klub, id_hostujici_klub, datum_zapasu) VALUES (5, 1, 2, '2025-05-10');
+INSERT INTO public.zapas (id_zapas, id_domaci_klub, id_hostujici_klub, datum_zapasu) VALUES (6, 4, 3, '2025-05-11');
+INSERT INTO public.zapas (id_zapas, id_domaci_klub, id_hostujici_klub, datum_zapasu) VALUES (7, 3, 4, '2024-10-26');
+INSERT INTO public.zapas (id_zapas, id_domaci_klub, id_hostujici_klub, datum_zapasu) VALUES (8, 3, 6, '2024-11-05');
+INSERT INTO public.zapas (id_zapas, id_domaci_klub, id_hostujici_klub, datum_zapasu) VALUES (9, 6, 5, '2025-02-02');
+INSERT INTO public.zapas (id_zapas, id_domaci_klub, id_hostujici_klub, datum_zapasu) VALUES (10, 5, 6, '2024-09-22');

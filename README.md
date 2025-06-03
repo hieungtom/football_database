@@ -19,3 +19,25 @@
 </p>
 
 <p>Databáze Fotbal shora poskytuje podrobný přehled o hráčích, jejich kariérách, klubech a trenérech, a zároveň nabízí nástroj pro sledování výkonů v soutěžích, což je užitečné pro analýzy a rozhodování v oblasti fotbalu. Navíc zajišťuje flexibilitu díky navrženým vazbám, které umožňují rozšíření o další aspekty, jako jsou mezinárodní soutěže nebo individuální ocenění hráčů.</p>
+
+<h2>A few SQL quaries used to test the database:</h2>
+<h3>Zobraz všechny již odehrané zápasy klubů s počtem gólů domácích a hostujících.</h3>
+
+SELECT z.datum_zapasu, domaci.nazev AS domaci_klub, hostujici.nazev AS hostujici_klub,
+    SUM(CASE WHEN zh.id_hrac IN (
+            SELECT id_hrac 
+            FROM kontrakt 
+            WHERE id_klub = z.id_domaci_klub
+        ) THEN zh.gol ELSE 0 END) AS goly_domaci,
+    SUM(CASE WHEN zh.id_hrac IN (
+            SELECT id_hrac 
+            FROM kontrakt 
+            WHERE id_klub = z.id_hostujici_klub
+        ) THEN zh.gol ELSE 0 END) AS goly_hostujici
+FROM zapas z
+JOIN klub domaci ON z.id_domaci_klub = domaci.id_klub
+JOIN klub hostujici ON z.id_hostujici_klub = hostujici.id_klub
+LEFT JOIN zapas_hrac zh ON z.id_zapas = zh.id_zapas
+WHERE datum_zapasu < now()
+GROUP BY z.datum_zapasu, domaci.nazev, hostujici.nazev
+ORDER BY z.datum_zapasu DESC;

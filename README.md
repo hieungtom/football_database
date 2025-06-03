@@ -22,7 +22,7 @@
 
 <h2>A few SQL quaries used to test the database:</h2>
 <h3>Zobraz všechny již odehrané zápasy klubů s počtem gólů domácích a hostujících.</h3>
-<code>
+```sql
 SELECT z.datum_zapasu, domaci.nazev AS domaci_klub, hostujici.nazev AS hostujici_klub,
     SUM(CASE WHEN zh.id_hrac IN (
             SELECT id_hrac 
@@ -41,4 +41,4 @@ LEFT JOIN zapas_hrac zh ON z.id_zapas = zh.id_zapas
 WHERE datum_zapasu < now()
 GROUP BY z.datum_zapasu, domaci.nazev, hostujici.nazev
 ORDER BY z.datum_zapasu DESC;
-</code>
+```

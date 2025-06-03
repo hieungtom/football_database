@@ -45,6 +45,7 @@ GROUP BY z.datum_zapasu, domaci.nazev, hostujici.nazev
 ORDER BY z.datum_zapasu DESC;
 ```
 
+<br>
 
 <h3>Vyber kluby, které vyhrály všechny trofeje.</h3>
 
@@ -62,6 +63,7 @@ WHERE NOT EXISTS (
 );
 ```
 
+<br>
 
 <h3>Vypiš Španělské obránce a datumy konce jejich kontraktu. Pokud hráč nikdy neměl kontrakt, chceme mít ve výpisu informaci 'NEMA KONTRAKT'. Ve výstupu řadíme podle nejbližšího datumu vypršení kontraktu.</h3>
 
@@ -74,6 +76,7 @@ GROUP BY jmeno, prijmeni
 ORDER BY kontrakt
 ```
 
+<br>
 
 <h3>Vypiš hráče a jejich celkový počet gólů. Ve výsledku chceme jméno, příjmení, pozici a seřadíme je podle největšího počtu gólů.</h3>
 
@@ -84,6 +87,7 @@ FROM hrac h
 ORDER BY pocetGolu DESC
 ```
 
+<br>
 
 <h3>Pro každého hráče vypiš celkový počet žlutých karet. Zajímají nás pouze hráči, kteří se narodili po roce 2000 včetně a obdrželi alespoň dvě žluté karty. Výsledek seřaď podle počtu žlutých karet vzestupně.</h3>
 

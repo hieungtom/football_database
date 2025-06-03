@@ -23,7 +23,8 @@
 <h2>A few SQL quaries used to test the database:</h2>
 <h3>Zobraz všechny již odehrané zápasy klubů s počtem gólů domácích a hostujících.</h3>
 
-```sql SELECT z.datum_zapasu, domaci.nazev AS domaci_klub, hostujici.nazev AS hostujici_klub,
+```sql
+SELECT z.datum_zapasu, domaci.nazev AS domaci_klub, hostujici.nazev AS hostujici_klub,
     SUM(CASE WHEN zh.id_hrac IN (
             SELECT id_hrac 
             FROM kontrakt 
